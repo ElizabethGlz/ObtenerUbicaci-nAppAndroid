@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_ubicacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Obtener ubicación"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_latitud"
+        android:text="Latitud: "
+        app:layout_constraintTop_toBottomOf="@id/btn_ubicacion"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_longitud"
+        android:text="Longitud: "
+        app:layout_constraintTop_toBottomOf="@id/tv_latitud"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_longitud"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:inputType="textMultiLine"
+        />
+</android.support.constraint.ConstraintLayout>
